@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="https://allfont.ru/allfont.css?fonts=open-sans-semibold" rel="stylesheet" type="text/css" />
+    <link href="https://allfont.ru/allfont.css?fonts=open-sans-semibold-italic" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://allfont.ru/allfont.css?fonts=source-sans-pro-semibold" rel="stylesheet" type="text/css" />
+
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+
+    <!-- SEO -->
+    <title>Bino</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('./components/header/_header.html')
+        <main class="main">
+            @@include('./components/slider/_slider.html')
+            @@include('./components/blog/_blog.html')
+            @@include('./components/pricing/_pricing.html')
+            @@include('./components/team/_team.html')
+            @@include('./components/touch/_touch.html')
+        </main>
+        @@include('./components/footer/_footer.html')
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/script.min.js"></script>
+</body>
+
+</html>

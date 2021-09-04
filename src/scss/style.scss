@@ -1,0 +1,108 @@
+// Nullstyle
+@import 'nullstyle.scss';
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.body-active {
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 1171px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+.slider {
+  background: url('../img/header/prvw-bg.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.inner {
+  display: flex;
+  @media screen and (max-width: 1200px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.paragraph {
+  width: 195px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  span {
+    width: 80px;
+    height: 1px;
+    background-color: #f1ebe7;
+  }
+  &__dot {
+    width: 8px;
+    height: 7px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+.paragraph-gray span{
+  background-color: #999999;
+}
+.paragraph-white span{
+  background-color: #ffffff;
+}
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    text-shadow: 0 1px 0 #ffffff;
+    color: #6a6a6a;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  &__txt {
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+}
+.headline-white{
+  position: relative;
+  z-index: 1;
+  .headline__title{
+    color: #ffffff;
+  }
+  .headline__txt{
+    color: #f4f5f9;
+  }
+  
+}
+
+
+
+@import './components/header/header.scss';
+@import './components/slider/slider.scss';
+@import './components/blog/blog.scss';
+@import './components/blog-cards/blog-cards.scss';
+@import './components/pricing/pricing.scss';
+@import './components/team/team.scss';
+@import './components/touch/touch.scss';
+@import './components/footer/footer.scss';
+@import './components/up-button/up-button.scss';

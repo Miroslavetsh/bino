@@ -1,0 +1,137 @@
+.blog__txt-card {
+  position: relative;
+  box-sizing: border-box;
+  padding: 71px 51px 50px 49px;
+  background-color: #e74e3e;
+  &:nth-child(5),
+  &:nth-child(7) {
+    &::before {
+      left: unset;
+      right: -27px;
+      border-color: transparent transparent transparent #e74f3e;
+      border-width: 35px 0 35px 28px;
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 200px;
+    left: -27px;
+    border-style: solid;
+    border-width: 35px 28px 35px 0;
+    border-color: transparent #e74f3e transparent transparent;
+  }
+  @media screen and (max-width: 1550px) {
+    padding: 30px;
+  }
+  @media screen and (max-width: 1280px) {
+    padding: 24px;
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 71px 51px 50px 49px;
+    &:nth-child(4) {
+      &::before {
+        left: unset;
+        right: -27px;
+        border-color: transparent transparent transparent #e74f3e;
+        border-width: 35px 0 35px 28px;
+      }
+    }
+    &:nth-child(5) {
+      &::before {
+        right: unset;
+        left: -27px;
+        border-color: transparent #e74f3e transparent transparent;
+        border-width: 35px 28px 35px 0;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    padding: 40px;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 20px;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 71px 40px 50px;
+  }
+  @media screen and (max-width: 380px) {
+    padding: 30px;
+  }
+}
+.card__pre-title {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  margin-bottom: 32px;
+}
+.card__title {
+  color: #ffffff;
+  font-family: 'Source Sans Pro - Semibold', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 1280px) {
+    font-size: 1.4rem;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 1.4rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 1.5rem;
+  }
+}
+.card__span {
+  width: 44px;
+  height: 4px;
+  background-color: #ffffff;
+  margin-bottom: 49px;
+}
+.card__txt {
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 55px;
+  @media screen and (max-width: 1280px) {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 1rem;
+    margin-bottom: 55px;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+}
+.read__more {
+  color: #ffffff;
+  font-family: 'Open Sans Semibold Italic', arial;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 24px;
+  font-weight: 600;
+  i {
+    margin-left: 8px;
+  }
+}
