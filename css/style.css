@@ -969,22 +969,22 @@ template {
 }
 
 .cards__img-coffee {
-  background: url("../../../img/blog/coffe.png") center center no-repeat;
+  background: url("../img/blog/coffe.png") center center no-repeat;
   background-size: cover;
 }
 
 .cards__img-clocks {
-  background: url("../../../img/blog/clocks.png") center center no-repeat;
+  background: url("../img/blog/clocks.png") center center no-repeat;
   background-size: cover;
 }
 
 .cards__img-road {
-  background: url("../../../img/blog/road.png") center center no-repeat;
+  background: url("../img/blog/road.png") center center no-repeat;
   background-size: cover;
 }
 
 .cards__img-car {
-  background: url("../../../img/blog/car.png") center center no-repeat;
+  background: url("../img/blog/car.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -1056,7 +1056,7 @@ template {
 
 .statistics {
   width: 100%;
-  background: url("../../../img/blog/likes-bg.png") center center no-repeat;
+  background: url("../img/blog/likes-bg.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -2256,14 +2256,14 @@ template {
 
 .webp .slider{ background: url(../img/header/prvw-bg.webp) center no-repeat; }
 
-.webp .cards__img-coffee{ background: url(../../../img/blog/coffe.webp) center center no-repeat; }
+.webp .cards__img-coffee{ background: url(../img/blog/coffe.webp) center center no-repeat; }
 
-.webp .cards__img-clocks{ background: url(../../../img/blog/clocks.webp) center center no-repeat; }
+.webp .cards__img-clocks{ background: url(../img/blog/clocks.webp) center center no-repeat; }
 
-.webp .cards__img-road{ background: url(../../../img/blog/road.webp) center center no-repeat; }
+.webp .cards__img-road{ background: url(../img/blog/road.webp) center center no-repeat; }
 
-.webp .cards__img-car{ background: url(../../../img/blog/car.webp) center center no-repeat; }
+.webp .cards__img-car{ background: url(../img/blog/car.webp) center center no-repeat; }
 
-.webp .statistics{ background: url(../../../img/blog/likes-bg.webp) center center no-repeat; }
+.webp .statistics{ background: url(../img/blog/likes-bg.webp) center center no-repeat; }
 
 .webp .team{ background: url(../img/team/bg.webp) center no-repeat; }
