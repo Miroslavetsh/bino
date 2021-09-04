@@ -1,5 +1,5 @@
 {
-  "name": "mogo",
+  "name": "bino",
   "version": "1.0.0",
   "description": "My first practice tutorial",
   "main": "index.html",
@@ -13,6 +13,7 @@
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.2.2",
     "gulp-fonter": "^0.3.0",
