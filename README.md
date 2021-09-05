@@ -1,2 +1,2 @@
 # Bino
-To visit this site you must click [THIS Link](https://miroslavetsh.github.io/bino/)
+Follow the [Link](https://miroslavetsh.github.io/bino/) and visit page
