@@ -1495,8 +1495,8 @@ template {
 .teammates__photo {
   stroke: #e74c3c;
   stroke-width: 5px;
-  -webkit-filter: drop-shadow(0 -10px 5px #000);
-          filter: drop-shadow(0 -10px 5px #000);
+  -webkit-filter: drop-shadow(0 10px 5px #000);
+          filter: drop-shadow(0 10px 5px #000);
   cursor: pointer;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
