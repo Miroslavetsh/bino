@@ -1348,7 +1348,7 @@ template {
   background: rgba(0, 0, 0, 0.75);
 }
 
-.team svg {
+.team__svg {
   position: relative;
   margin: 0 auto;
   z-index: 1;
@@ -1471,6 +1471,41 @@ template {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1.4px;
+}
+
+.teammates__card:hover .teammates__text {
+  opacity: 1;
+}
+
+.teammates__text {
+  opacity: 0;
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.teammates__text::after {
+  position: absolute;
+  background: #000;
+  width: 300px;
+  height: 300px;
+}
+
+.teammates__photo {
+  stroke: #e74c3c;
+  stroke-width: 5px;
+  -webkit-filter: drop-shadow(0 -10px 5px #000);
+          filter: drop-shadow(0 -10px 5px #000);
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.teammates__photo:hover {
+  -webkit-filter: drop-shadow(0 0 12px #000000);
+          filter: drop-shadow(0 0 12px #000000);
 }
 
 .touch {
@@ -1951,7 +1986,7 @@ template {
     opacity: 1;
   }
 
-  .svg__team {
+  .team__svg {
     display: none;
   }
 

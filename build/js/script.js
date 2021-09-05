@@ -141,3 +141,23 @@ const swiper = new Swiper('.swiper', {
   },
 })
 
+
+// Import team canvas
+// window.onload = function () {
+//   const canvas = document.querySelector('#team-canvas')
+
+// //   canvas.width = canvas.offsetWidth
+// //   canvas.height = canvas.offsetHeight
+
+//   if (canvas.getContext) {
+//     let ctx = canvas.getContext('2d')
+    
+//     ctx.strokeStyle = 'red'
+//     ctx.strokeWidth = '10px'
+
+//     ctx.beginPath()
+//     ctx.moveTo(100, 25)
+//     ctx.lineTo(50, 120)
+//   }
+// }
+
