@@ -204,6 +204,7 @@ textarea {
   /* 1 */
   margin: 0;
   /* 2 */
+  resize: none;
 }
 
 /**
@@ -702,9 +703,16 @@ template {
   background-color: #f4f5f9;
   height: 64px;
   border-radius: 50%;
-  -webkit-transform: translateX(-50%) translateY(50%);
-      -ms-transform: translateX(-50%) translateY(50%);
-          transform: translateX(-50%) translateY(50%);
+  cursor: pointer;
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .slider__anchor::before {
@@ -717,9 +725,27 @@ template {
   background: #fff;
   opacity: 0.3;
   border-radius: 50%;
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider__anchor:hover {
+  -webkit-transform: translate(-50%, 50%) scale(0.5);
+      -ms-transform: translate(-50%, 50%) scale(0.5);
+          transform: translate(-50%, 50%) scale(0.5);
+}
+
+.slider__anchor:hover::before {
+  -webkit-transform: translate(-50%, -50%) scale(2.5);
+      -ms-transform: translate(-50%, -50%) scale(2.5);
+          transform: translate(-50%, -50%) scale(2.5);
 }
 
 .slider .inner {
@@ -939,28 +965,9 @@ template {
 }
 
 .blog-card {
+  background: #212121;
   width: 25%;
   height: 480px;
-}
-
-.cards__img-coffee {
-  background: url("../img/blog/coffe.png") center center no-repeat;
-  background-size: cover;
-}
-
-.cards__img-clocks {
-  background: url("../img/blog/clocks.png") center center no-repeat;
-  background-size: cover;
-}
-
-.cards__img-road {
-  background: url("../img/blog/road.png") center center no-repeat;
-  background-size: cover;
-}
-
-.cards__img-car {
-  background: url("../img/blog/car.png") center center no-repeat;
-  background-size: cover;
 }
 
 .blog__inner {
@@ -1031,7 +1038,7 @@ template {
 
 .statistics {
   width: 100%;
-  background: url("../img/blog/likes-bg.png") center center no-repeat;
+  background: url("../img/blog/likes-bg.webp") center center no-repeat;
   background-size: cover;
 }
 
@@ -1061,6 +1068,7 @@ template {
   border-style: solid;
   border-width: 35px 28px 35px 0;
   border-color: transparent #e74f3e transparent transparent;
+  z-index: 3;
 }
 
 .card__pre-title {
@@ -1099,6 +1107,52 @@ template {
   margin-bottom: 55px;
 }
 
+.cards__img {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards__img:hover > div {
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.cards__img > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.cards__img-coffee {
+  background: url("../img/blog/coffe.webp") center center no-repeat;
+  background-size: cover;
+}
+
+.cards__img-clocks {
+  background: url("../img/blog/clocks.webp") center center no-repeat;
+  background-size: cover;
+}
+
+.cards__img-road {
+  background: url("../img/blog/road.webp") center center no-repeat;
+  background-size: cover;
+}
+
+.cards__img-car {
+  background: url("../img/blog/car.png") center center no-repeat;
+  background-size: cover;
+}
+
 .read__more {
   color: #ffffff;
   font-family: 'Open Sans Semibold Italic', arial;
@@ -1110,6 +1164,17 @@ template {
 
 .read__more i {
   margin-left: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.read__more:hover {
+  text-decoration: underline;
+}
+
+.read__more:hover i {
+  margin-left: 12px;
 }
 
 .pricing__inner {
@@ -2262,14 +2327,6 @@ template {
 
 .webp .slider{ background: url(../img/header/prvw-bg.webp) center no-repeat; }
 
-.webp .cards__img-coffee{ background: url(../img/blog/coffe.webp) center center no-repeat; }
-
-.webp .cards__img-clocks{ background: url(../img/blog/clocks.webp) center center no-repeat; }
-
-.webp .cards__img-road{ background: url(../img/blog/road.webp) center center no-repeat; }
-
 .webp .cards__img-car{ background: url(../img/blog/car.webp) center center no-repeat; }
-
-.webp .statistics{ background: url(../img/blog/likes-bg.webp) center center no-repeat; }
 
 .webp .team{ background: url(../img/team/bg.webp) center no-repeat; }

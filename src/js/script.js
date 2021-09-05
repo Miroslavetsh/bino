@@ -12,3 +12,6 @@
 
 // Import slider
 @@include('./slider.js')
+
+// Import anchor
+@@include('./anchor.js')
