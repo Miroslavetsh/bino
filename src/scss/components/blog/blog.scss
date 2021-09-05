@@ -13,7 +13,9 @@
   flex-wrap: wrap;
   align-items: center;
 }
+
 .blog-card {
+  background: #212121;
   width: 25%;
   height: 480px;
   @media screen and (max-width: 1000px) {
@@ -72,22 +74,7 @@
     }
   }
 }
-.cards__img-coffee {
-  background: url('../img/blog/coffe.png') center center no-repeat;
-  background-size: cover;
-}
-.cards__img-clocks {
-  background: url('../img/blog/clocks.png') center center no-repeat;
-  background-size: cover;
-}
-.cards__img-road {
-  background: url('../img/blog/road.png') center center no-repeat;
-  background-size: cover;
-}
-.cards__img-car {
-  background: url('../img/blog/car.png') center center no-repeat;
-  background-size: cover;
-}
+
 .blog__inner {
   width: 100%;
   display: flex;
@@ -117,6 +104,7 @@
     width: 100%;
   }
 }
+
 .stat__img-wrapper {
   width: 111px;
   height: 111px;
@@ -131,12 +119,14 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
 .stat__amount {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1.5px;
   color: #f4f5f9;
 }
+
 .stat__info {
   font-weight: 400;
   letter-spacing: 0.9px;
@@ -148,6 +138,6 @@
 
 .statistics {
   width: 100%;
-  background: url('../img/blog/likes-bg.png') center center no-repeat;
+  background: url('../img/blog/likes-bg.webp') center center no-repeat;
   background-size: cover;
 }
