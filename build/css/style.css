@@ -607,23 +607,6 @@ template {
   max-width: 141px;
 }
 
-/*
-
-
-label 
-
-label div
-
-label div:
-
-label div
-
-#menu_checkbox:checked + label
-
-
-#menu_checkbox:checked + label 
-*/
-
 .menu__burger {
   position: absolute;
   top: 50%;
@@ -1902,6 +1885,7 @@ label div
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
+    padding-top: 10px;
   }
 
   .nav {
@@ -1981,12 +1965,6 @@ label div
 @media screen and (max-width: 940px) {
   .contact__info {
     padding: 100px 40px 97px 40px;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .header__inner {
-    padding-top: 20px;
   }
 }
 
