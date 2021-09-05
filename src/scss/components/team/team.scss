@@ -15,12 +15,15 @@
     right: 0;
     background: rgba(#000, 0.75);
   }
-  svg {
+  &__svg {
     position: relative;
     margin: 0 auto;
     z-index: 1;
 
     transform: translate(0, 0) scale(1.05);
+    @media screen and (max-width: 950px) {
+      display: none;
+    }
   }
 }
 .team__inner {
@@ -30,11 +33,6 @@
   align-items: center;
   position: relative;
   z-index: 1;
-}
-.svg__team {
-  @media screen and (max-width: 950px) {
-    display: none;
-  }
 }
 
 .team__custom {
@@ -118,4 +116,37 @@
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1.4px;
+}
+
+.teammates {
+  &__card {
+    &:hover {
+      .teammates__text {
+        opacity: 1;
+      }
+    }
+  }
+  &__text {
+    opacity: 0;
+    position: relative;
+
+    transition: all .3s ease-in-out;
+    &::after {
+      position: absolute;
+      background: #000;
+      width: 300px;
+      height: 300px;
+    }
+  }
+  &__photo {
+    stroke: #e74c3c;
+    stroke-width: 5px;
+    filter: drop-shadow(0 -10px 5px #000);
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+    &:hover {
+      filter: drop-shadow(0 0 12px #000000);
+    }
+  }
 }
