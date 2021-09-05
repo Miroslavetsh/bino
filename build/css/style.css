@@ -604,24 +604,7 @@ template {
 }
 
 .logo {
-  border: 3px solid #f4f5f9;
-  text-transform: uppercase;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 11px 12px 9px 0px;
-  color: #f1ebe7;
-  font-size: 2.25rem;
-  font-weight: 200;
-  line-height: 28px;
-  letter-spacing: 1.04px;
-}
-
-.logo span {
-  color: #4a4c55;
-  background-color: #f4f5f9;
-  padding: 0 12px 0 10px;
-  margin-right: 13px;
-  font-weight: bold;
+  max-width: 141px;
 }
 
 .menu__burger {
@@ -2040,6 +2023,14 @@ template {
   .card__txt {
     font-size: 1rem;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo svg {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 

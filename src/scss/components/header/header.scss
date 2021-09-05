@@ -99,21 +99,11 @@
   }
 }
 .logo {
-  border: 3px solid #f4f5f9;
-  text-transform: uppercase;
-  box-sizing: border-box;
-  padding: 11px 12px 9px 0px;
-  color: #f1ebe7;
-  font-size: 2.25rem;
-  font-weight: 200;
-  line-height: 28px;
-  letter-spacing: 1.04px;
-  span {
-    color: #4a4c55;
-    background-color: #f4f5f9;
-    padding: 0 12px 0 10px;
-    margin-right: 13px;
-    font-weight: bold;
+  max-width: 141px;
+  @media screen and (max-width: 768px) {
+    svg {
+      transform: scale(0.8);
+    }
   }
 }
 
