@@ -1,5 +1,5 @@
 # Bino
-## Landing with 8 sections.
+## Landing with 8 sections
 * Using swiper.js as slider in preview section
 * SVG animation for team block & header burger
 * Gulp.js for deploy and SCSS compilation
